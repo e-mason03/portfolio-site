@@ -7,17 +7,18 @@ body {
 }
 
 nav {
-  text-align: center;
-  background-color: #8B4513;
+    text-align: center;
+    background-color: #8B4513;
+    padding: 20px; 
 }
 
 nav a {
-  text-align: center;
-  padding: 15px;
-  margin: 15px;
-  color: #FFF;
+    display: inline-block;
+    padding: 15px;
+    margin: 15px;
+    color: #FFF;
+    text-decoration: none;
 }
-
 h1 {
   color: #FFF;
 }
