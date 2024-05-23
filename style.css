@@ -1,5 +1,6 @@
 * {
-  background-color: #8B4513
+  background-color: #8B4513;
+  margin: 0;
 }
 
 head {
@@ -11,18 +12,19 @@ body {
 }
 
 nav {
-    text-align: center;
-    padding: 20px; 
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 nav a {
-    display: inline-block;
-    padding: 15px;
-    margin: 15px;
-    color: #FFF;
-    border: 3px solid #FFF;
-    text-decoration: none;
-    transition: background-color 0.3s;
+  display: inline-block;
+  padding: 15px;
+  margin: 0 15px;
+  color: #FFF;
+  border: 3px solid #FFF;
+  text-decoration: none;
+  transition: background-color 0.3s;
 }
 
 nav a:hover {
