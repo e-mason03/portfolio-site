@@ -1,14 +1,16 @@
+* {
+  background-color: #8B4513
+}
+
 head {
-  background-color: #8B4513;
+  
 }
 
 body {
-  background-color: #8B4513;
 }
 
 nav {
     text-align: center;
-    background-color: #8B4513;
     padding: 20px; 
 }
 
@@ -17,8 +19,21 @@ nav a {
     padding: 15px;
     margin: 15px;
     color: #FFF;
+    border: 3px solid #FFF;
     text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
 }
+
+nav a:hover {
+  background-color: #9F5927;
+}
+
 h1 {
   color: #FFF;
+  text-align: center;
+}
+
+h3 {
+  color: #FFF;
+  text-align: center;
 }
