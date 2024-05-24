@@ -25,6 +25,11 @@ nav a:hover {
   background-color: #9F5927;
 }
 
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
 h3 {
   color: #FFF;
   text-align: center;
