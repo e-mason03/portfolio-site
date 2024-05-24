@@ -19,8 +19,8 @@ nav {
 
 nav a {
   display: inline-flex;
-  /*justify-content: center;*/
-  
+  justify-content: center;
+  align-items: center;
   padding: 15px;
   margin: 0 15px;
   color: #FFF;
