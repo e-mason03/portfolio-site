@@ -31,11 +31,6 @@ nav a {
   height: 50px;
 }
 
-/*nav a p {
-  font-size: 24px;
-  font-weight: bold;
-}*/
-
 nav a:hover {
   background-color: #9F5927;
 }
