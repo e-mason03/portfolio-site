@@ -19,6 +19,8 @@ nav a {
   height: 50px;
   font-size: 24px !important;
   font-weight: bold;
+  white-space: nowrap;
+  
 }
 
 nav a:hover {
