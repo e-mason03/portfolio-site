@@ -2,21 +2,28 @@ p {
   color: #FFF;
 }
 
-.line {
-  content: "";
-  height: 1px;
+.timeline-container {
+  position: relative;
   width: 90%;
+  margin: auto;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  height: 1px;
+  width: 90%
   background-color: #FFF;
   opacity: 0.5;
   z-index: -1;  
 }
 
-.timeline {
-  width: 90%;
+.img-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 15px;
+  position: relative;
 }
 
 .timeline-img {
@@ -24,6 +31,7 @@ p {
   align-items: center;
   height: 150px;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .timeline-img img {
@@ -37,7 +45,7 @@ p {
 }
 
 
-.timeline img:hover {
+.img-container img:hover {
   width: 150px;
   height: 150px;
 }
