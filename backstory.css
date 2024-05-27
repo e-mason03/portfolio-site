@@ -28,8 +28,7 @@ p {
 }
 
 .img-container img:hover {
-  width: 150px;
-  height: 150px;
+  transform: scale(1.25);
 }
 
 .timeline .line {
@@ -47,7 +46,7 @@ p {
 .img-container .caption {
   display: none;
   position: absolute;
-  bottom: -25px;
+  bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
   color: #FFF;
@@ -58,6 +57,7 @@ p {
 }
 
 .img-container:hover .caption {
+  transform: translateY(100%);
   display: block;
   opacity: 1;
 }
