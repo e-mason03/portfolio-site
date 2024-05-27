@@ -3,12 +3,36 @@ p {
 }
 
 .timeline {
-  display: in-line;
+  width: 100%;
+  display: flex;
   align-items: center;
+  /*justify-content: space-between*/
+  
 }
 
 .timeline img {
   display: inline-block;
-  width: 25px;
-  height: 25px;
+  padding: 20px;
+  width: 100px;
+  height: 100px;
+  transition: height 0.3s;
+  transition: width 0.3s;
+}
+
+.timeline img::before {
+  content: "";
+  color: #FFF;
+  display: inline-block;
+  width: 15px;
+  height: 2px;
+  margin-right: 5px;
+}
+
+.timeline img:first-child::before {
+  display: none;
+}
+
+.timeline img:hover {
+  width: 150px;
+  height 150px;
 }
