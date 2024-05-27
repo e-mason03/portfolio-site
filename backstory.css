@@ -15,15 +15,16 @@ p {
   display: inline-block;
   position: relative;
   padding: 20px;
+  width: 150px;
+  height: 150px;
 }
 
 .img-container img {
   display: inline-block;
-  max-width: 150px;
-  max-height: 150px;
-  height: auto;
-  width: auto;
-  transition: height 0.3s, width 0.3s;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  transition: transform 0.3s;
   border: 2px solid #FFF;
   position: relative;
   z-index: 2;
