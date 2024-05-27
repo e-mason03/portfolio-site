@@ -14,11 +14,11 @@ p {
 .img-container {
   display: inline-block;
   position: relative;
+  padding: 20px;
 }
 
 .img-container img {
   display: inline-block;
-  padding: 20px;
   width: 150px;
   height: 150px;
   transition: height 0.3s, width 0.3s;
