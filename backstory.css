@@ -21,9 +21,9 @@ p {
   height: 1px;
   width: 100%;
   color: #FFF !important;
-  background-color: #FFF !important;
+  /*background-color: #FFF !important;*/
   opacity: 0.5;
-  z-index: 1;  
+  z-index: 0;  
 }
 
 .img-container {
@@ -31,7 +31,7 @@ p {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 
 .timeline-img {
