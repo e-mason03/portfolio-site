@@ -3,7 +3,7 @@ p {
 }
 
 .timeline {
-  width: 100%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,7 +22,7 @@ p {
 
 .timeline-img::before {
   content: "";
-  color: #FFF;
+  background-color: #FFF;
   display: inline-block;
   width: 15px;
   height: 2px;
