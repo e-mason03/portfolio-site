@@ -12,20 +12,19 @@ p {
   position: relative;
   width: 90%;
   margin: auto;
-  z-index: 0;
 }
 
-.line {
+/*.line {
   position: absolute;
   top: 50%;
   left: 0;
   height: 1px;
   width: 100%;
   color: #FFF !important;
-  /*background-color: #FFF !important;*/
+  background-color: #FFF !important;
   opacity: 0.5;
   z-index: 1;  
-}
+} */
 
 .img-container {
   display: flex;
@@ -35,12 +34,22 @@ p {
   /*z-index: 1;*/
 }
 
+.img-container:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #FFF;
+  z-index: 0;
+}
+
 .timeline-img {
   display: flex;
   align-items: center;
   height: 150px;
   box-sizing: border-box;
-  z-index: 2;
 }
 
 .timeline-img img {
@@ -51,7 +60,6 @@ p {
   transition: height 0.3s, width 0.3s;
   border: 2px solid #FFF;
 }
-
 
 .img-container img:hover {
   width: 150px;
