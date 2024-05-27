@@ -14,24 +14,11 @@ p {
   margin: auto;
 }
 
-/*.line {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  height: 1px;
-  width: 100%;
-  color: #FFF !important;
-  background-color: #FFF !important;
-  opacity: 0.5;
-  z-index: 1;  
-} */
-
 .img-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
-  /*z-index: 1;*/
 }
 
 .img-container:before {
@@ -42,7 +29,7 @@ p {
   height: 1px;
   width: 100%;
   background-color: #FFF;
-  z-index: 0;
+  z-index: -1;
 }
 
 .timeline-img {
@@ -50,6 +37,8 @@ p {
   align-items: center;
   height: 150px;
   box-sizing: border-box;
+  position: relative;
+  z-index: 1;
 }
 
 .timeline-img img {
