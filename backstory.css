@@ -31,7 +31,7 @@ p {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  z-index: 1;
+  /*z-index: 1;*/
 }
 
 .timeline-img {
@@ -39,7 +39,7 @@ p {
   align-items: center;
   height: 150px;
   box-sizing: border-box;
-  z-index: 2;
+  z-index: 1;
 }
 
 .timeline-img img {
