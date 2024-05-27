@@ -24,12 +24,9 @@ p {
   height: 100px;
   transition: height 0.3s, width 0.3s;
   border: 2px solid #FFF;
-  /*margin-right: 20px;*/
+  position: relative;
+  z-index: 2;
 }
-
-/*.img-container img:last-child{
-  margin-right: 0;
-}*/
 
 .img-container img:hover {
   width: 150px;
@@ -44,5 +41,5 @@ p {
   top: 50%;
   left: 0;
   right: 0;
-  z-index: -1;
+  z-index: 1;
 }
