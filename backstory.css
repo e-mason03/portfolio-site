@@ -20,6 +20,7 @@ p {
   left: 0;
   height: 1px;
   width: 100%;
+  color: #FFF !important;
   background-color: #FFF !important;
   opacity: 0.5;
   z-index: 1;  
