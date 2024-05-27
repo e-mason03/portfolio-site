@@ -15,7 +15,6 @@ p {
 .img-container {
   display: inline-block;
   position: relative;
-  /*padding: 20px;*/
   width: 150px;
   height: 150px;
 }
@@ -42,7 +41,7 @@ p {
   width: 80%;
   height: 1px;
   background-color: #FFF;
-  top: 50%;
+  top: 55%;
   left: 50%; /* Centering the line */
   transform: translate(-50%, -50%);
   right: 0;
