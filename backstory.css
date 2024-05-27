@@ -32,8 +32,8 @@ p {
 }
 
 .line {
-  position: absolute;
-  width: 100%;
+  position: relative;
+  width: 80%;
   height: 1px;
   background-color: #FFF;
   top: 50%;
