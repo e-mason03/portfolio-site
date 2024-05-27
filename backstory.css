@@ -6,7 +6,7 @@ p {
   width: 100%;
   display: flex;
   align-items: center;
-  /*justify-content: space-between*/
+  justify-content: space-between;
   
 }
 
@@ -17,6 +17,7 @@ p {
   height: 100px;
   transition: height 0.3s;
   transition: width 0.3s;
+  border: 2px solid #FFF;
 }
 
 .timeline img::before {
