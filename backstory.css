@@ -2,6 +2,14 @@ p {
   color: #FFF;
 }
 
+.line {
+  height: 1px;
+  width: 90%;
+  background-color: #FFF;
+  opacity: 0.5;
+  z-index: -1;  
+}
+
 .timeline {
   width: 90%;
   display: flex;
@@ -27,20 +35,6 @@ p {
   border: 2px solid #FFF;
 }
 
-.timeline-img::before {
-  content: "";
-  background-color: #FFF;
-  display: inline-block;
-  width: 100%;
-  height: 1px;
-  margin-right: 5px;
-  margin-left: 5px;
-  opacity: 0.5
-}
-
-.timeline-img:first-child::before {
-  display: none;
-}
 
 .timeline img:hover {
   width: 150px;
