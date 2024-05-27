@@ -22,6 +22,11 @@ p {
   height: 100px;
   transition: height 0.3s, width 0.3s;
   border: 2px solid #FFF;
+  margin-right: 20px;
+}
+
+.img-container img:last-child{
+  margin-right: 0;
 }
 
 .img-container img:hover {
