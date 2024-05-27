@@ -19,9 +19,9 @@ p {
 
 .timeline-img img {
   display: inline-block;
-  /*padding: 20px;
+  padding: 20px;
   width: 100px;
-  height: 100px;*/
+  height: 100px;
   transition: height 0.3s;
   transition: width 0.3s;
   border: 2px solid #FFF;
