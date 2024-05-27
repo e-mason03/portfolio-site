@@ -1,3 +1,14 @@
 p {
   color: #FFF;
 }
+
+.timeline {
+  display: in-line;
+  align-items: center;
+}
+
+.timeline img {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
