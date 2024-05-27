@@ -12,7 +12,7 @@ p {
 }
 
 .img-container {
-  display: inline-block;
+  display: inline-flex;
   position: relative;
   padding: 20px;
   width: 150px;
