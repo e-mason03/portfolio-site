@@ -24,8 +24,8 @@ p {
   content: "";
   background-color: #FFF;
   display: inline-block;
-  width: 15px;
-  height: 2px;
+  width: 45px;
+  height: 1px;
   margin-right: 5px;
   z-index: 10;
 }
