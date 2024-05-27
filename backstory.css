@@ -7,7 +7,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
+  margin: 0 15px;
 }
 
 .timeline img {
@@ -20,16 +20,17 @@ p {
   border: 2px solid #FFF;
 }
 
-.timeline img::before {
+.timeline-img::before {
   content: "";
   color: #FFF;
   display: inline-block;
   width: 15px;
   height: 2px;
   margin-right: 5px;
+  z-index: 10;
 }
 
-.timeline img:first-child::before {
+.timeline-img:first-child::before {
   display: none;
 }
 
