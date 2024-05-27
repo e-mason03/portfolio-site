@@ -19,8 +19,10 @@ p {
 
 .img-container img {
   display: inline-block;
-  width: 150px;
-  height: 150px;
+  max-width: 150px;
+  max-height: 150px;
+  height: auto;
+  width: auto;
   transition: height 0.3s, width 0.3s;
   border: 2px solid #FFF;
   position: relative;
@@ -37,7 +39,8 @@ p {
   height: 1px;
   background-color: #FFF;
   top: 50%;
-  left: 0;
+  left: 50%; /* Centering the line */
+  transform: translateX(-50%);
   right: 0;
   z-index: 1;
   opacity: 0.5;
