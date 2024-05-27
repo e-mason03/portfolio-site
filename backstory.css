@@ -3,7 +3,7 @@ p {
 }
 
 .timeline {
-  width: 80%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,8 +20,11 @@ p {
   border: 2px solid #FFF;
 }
 
-.timeline-img::before {
+.timeline-img {
   align-items: center;
+}
+
+.timeline-img::before {
   content: "";
   background-color: #FFF;
   display: inline-block;
