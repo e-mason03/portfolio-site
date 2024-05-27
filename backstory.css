@@ -11,7 +11,7 @@ p {
 .img-container {
   display: flex;
   align-items: center;
-  width: 90%;
+  width: 80%;
   height: auto;
   justify-content: space-between;
   position: relative;
@@ -20,8 +20,8 @@ p {
 .img-container img {
   display: inline-block;
   padding: 20px;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   transition: height 0.3s, width 0.3s;
   border: 2px solid #FFF;
   position: relative;
@@ -42,4 +42,5 @@ p {
   left: 0;
   right: 0;
   z-index: 1;
+  opacity: 0.5;
 }
