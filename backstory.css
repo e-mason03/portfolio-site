@@ -21,6 +21,7 @@ p {
 }
 
 .timeline-img {
+  display: flex;
   align-items: center;
 }
 
@@ -32,7 +33,6 @@ p {
   height: 1px;
   margin-right: 5px;
   margin-left: 5px;
-  /*z-index: 10;*/
   opacity: 0.5
 }
 
@@ -41,6 +41,6 @@ p {
 }
 
 .timeline img:hover {
-  width: 150%;
-  height: 150%;
+  width: 150px;
+  height: 150px;
 }
