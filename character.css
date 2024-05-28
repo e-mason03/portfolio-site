@@ -12,12 +12,10 @@ li {
 
 .experience-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
 .xp {
-  display: inline-block;
   color: #FFF
-  
+  width: 48%;
 }
