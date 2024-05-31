@@ -68,3 +68,7 @@ p {
   display: block;
   opacity: 1;
 }
+
+p {
+  width: 90%;
+}
