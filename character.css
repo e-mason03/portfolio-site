@@ -13,10 +13,14 @@ li {
 .experience-container {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 50%;
 }
 
 .xp {
   color: #FFF
   width: 48%;
+}
+
+.xp li {
+  color: #99A3A4
 }
