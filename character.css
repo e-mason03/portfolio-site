@@ -1,13 +1,10 @@
-p,
-h2,
-h3,
-h4{
+p, h2, h3, h4, ul {
   color: #FFF
 }
 
-ul,
-li {
-  color: #FFF
+h4 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5;
 }
 
 .experience-container {
@@ -17,10 +14,21 @@ li {
 }
 
 .xp {
-  color: #FFF
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFF;
+  
   width: 48%;
 }
 
+.xp ul {
+  padding: 0 20px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  text-align: left;
+}
+
 .xp li {
-  color: #99A3A4
+  color: #dbe6e7
 }

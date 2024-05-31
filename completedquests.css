@@ -1,0 +1,17 @@
+p, a {
+    color: #FFF;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    margin: 2em;
+}
+
+.project a {
+    text-decoration: none;
+    border: 1px dashed #FFF;
+}
