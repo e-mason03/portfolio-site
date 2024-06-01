@@ -1,3 +1,13 @@
+img {
+  padding: 0;
+  border: 5px solid #FFF;
+}
+
+img:hover {
+  transform: rotate(360deg);
+  transition: transform 0.5s ease;
+}
+
 .buttons {
   display: flex;
 }

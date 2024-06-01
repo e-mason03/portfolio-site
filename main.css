@@ -63,3 +63,17 @@ footer {
   padding: 0;
   text-align: center;
 }
+
+footer .credit{
+  margin-top: 1em;
+}
+
+footer .copyright,
+footer .credit {
+  color: #FFF;
+  font-size: 10px;
+}
+
+footer .credit a {
+  color: #FFF;
+}
