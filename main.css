@@ -48,6 +48,10 @@ h1 {
   text-align: center;
 }
 
+img {
+  border: 5px solid #FFF;
+}
+
 footer {
   width: 100%;
   border-top: 2px solid #FFF;
