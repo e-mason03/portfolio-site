@@ -7,11 +7,11 @@
     </head>
     <body>
         <nav>
-          <a href="./index.html">Rest</a>  <!-- Homepage -->
-          <a href="./backstory.html">Backstory</a> <!-- Timeline of skills acquired -->
-          <a href="./character.html">Character</a> <!-- Skills/About Me -->
-          <a href="./completedquests.html">Completed Quests</a> <!-- Projects -->   
-          <a href="./raven.html">Send a Raven</a> <!-- Contact -->
+          <a href="./rest">Rest</a>  <!-- Homepage -->
+          <a href="./backstory">Backstory</a> <!-- Timeline of skills acquired -->
+          <a href="./character">Character</a> <!-- Skills/About Me -->
+          <a href="./completedquests">Completed Quests</a> <!-- Projects -->   
+          <a href="./raven">Send a Raven</a> <!-- Contact -->
         </nav>
         <h1>Completed Quests</h1>
         <img src="./images/path.jpg" alt="Dirt path" height="250" width="300">
