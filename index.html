@@ -9,6 +9,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./main.css" />
   </head>
@@ -23,7 +28,6 @@
       dataLayer.push(arguments);
     }
     gtag("js", new Date());
-
     gtag("config", "G-YR4ZQ6PPGS");
   </script>
   <body>
@@ -37,9 +41,18 @@
           >Completed Quests</a
         >
         <a class="nav-link-custom" href="./raven.html">Send a Raven</a>
+        <div class="dropdown">
+          <select onchange="window.location.href=this.value">
+            <option value="">Select a Page</option>
+            <option value="./index.html">Rest</option>
+            <option value="./backstory.html">Backstory</option>
+            <option value="./character.html">Character</option>
+            <option value="./completed-quests.html">Completed Quests</option>
+            <option value="./raven.html">Send a Raven</option>
+          </select>
+        </div>
       </div>
     </nav>
-
     <!-- Main Content -->
     <div class="container main-content">
       <div class="row justify-content-center">
@@ -61,7 +74,6 @@
         </div>
       </div>
     </div>
-
     <!-- Footer -->
     <footer class="custom-footer">
       <div class="container">
@@ -81,7 +93,6 @@
         </div>
       </div>
     </footer>
-
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   </body>

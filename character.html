@@ -9,6 +9,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Custom CSS -->
     <link href="main.css" rel="stylesheet" />
     <link href="character.css" rel="stylesheet" />
@@ -38,6 +43,16 @@
           >Completed Quests</a
         >
         <a class="nav-link-custom" href="./raven.html">Send a Raven</a>
+        <div class="dropdown">
+          <select onchange="window.location.href=this.value">
+            <option value="">Select a Page</option>
+            <option value="./index.html">Rest</option>
+            <option value="./backstory.html">Backstory</option>
+            <option value="./character.html">Character</option>
+            <option value="./completed-quests.html">Completed Quests</option>
+            <option value="./raven.html">Send a Raven</option>
+          </select>
+        </div>
       </div>
     </nav>
 

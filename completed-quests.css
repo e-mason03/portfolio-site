@@ -161,6 +161,12 @@ li {
     min-height: 200px;
     padding: 1.5rem;
   }
+
+  /* Ensure images stay within content card on mobile */
+  .content-card img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
 }
 
 @media (max-width: 576px) {
