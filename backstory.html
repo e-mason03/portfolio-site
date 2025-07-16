@@ -1,78 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Backstory | Ethan Mason's Portfolio</title>
-    <link href="main.css" rel="stylesheet">
-    <link href="backstory.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="main.css" rel="stylesheet" />
+    <link href="backstory.css" rel="stylesheet" />
   </head>
   <body>
-    <nav>
-      <a href="./index.html">Rest</a>  <!-- Homepage -->
-      <a href="./backstory.html">Backstory</a> <!-- Timeline of skills acquired -->
-      <a href="./character.html">Character</a> <!-- Skills/About Me -->
-      <a href="./completedquests.html">Completed Quests</a> <!-- Projects -->   
-      <a href="./raven.html">Send a Raven</a> <!-- Contact -->
+    <!-- Navigation -->
+    <nav class="custom-nav">
+      <div class="nav-container">
+        <a class="nav-link-custom" href="./index.html">Rest</a>
+        <a class="nav-link-custom" href="./backstory.html">Backstory</a>
+        <a class="nav-link-custom" href="./character.html">Character</a>
+        <a class="nav-link-custom" href="./completed-quests.html"
+          >Completed Quests</a
+        >
+        <a class="nav-link-custom" href="./raven.html">Send a Raven</a>
+      </div>
     </nav>
-    <br>
-    <br>
-    <h1>Backstory</h1>
-    <br>
-    <br>
-    <div class ="timeline">
-      <div class="img-container">
-        <img src="./images/scratch cat.png" alt="Scratch cat">
-        <div class="caption">Skill Acquired: 2013</div>
+
+    <!-- Main Content -->
+    <div class="container main-content">
+      <div class="content-card">
+        <h1>Backstory</h1>
+
+        <!-- Timeline Section -->
+        <div class="timeline">
+          <div class="img-container">
+            <img src="./images/scratch cat.png" alt="Scratch cat" />
+            <div class="caption">Skill Acquired: 2013</div>
+          </div>
+          <div class="img-container">
+            <img src="./images/html.png" alt="HTML5 logo" />
+            <div class="caption">Skill Acquired: 2015</div>
+          </div>
+          <div class="img-container">
+            <img src="./images/css.png" alt="CSS3 logo" />
+            <div class="caption">Skill Acquired: 2015</div>
+          </div>
+          <div class="img-container">
+            <img src="./images/python-logo.png" alt="Python logo" />
+            <div class="caption">Skill Acquired: 2019</div>
+          </div>
+          <div class="img-container">
+            <img src="./images/java.png" alt="Java logo" />
+            <div class="caption">Skill Acquired: 2019</div>
+          </div>
+          <div class="img-container">
+            <img src="./images/c.png" alt="C logo" />
+            <div class="caption">Skill Acquired: 2024</div>
+          </div>
+          <div class="line"></div>
+        </div>
+
+        <div class="timeline">
+          <div class="img-container">
+            <img src="./images/react-logo.png" alt="React logo" />
+            <div class="caption">Skill Acquired: 2025</div>
+          </div>
+          <div class="img-container">
+            <img src="./images/typescript-logo.png" alt="Typescript logo" />
+            <div class="caption">Skill Acquired: 2025</div>
+          </div>
+          <div class="line"></div>
+        </div>
+
+        <!-- History Section -->
+        <div class="history">
+          <p>
+            Ethan Mason took an interest in the art some call "programming" at
+            an early age. Beginning with the simple magics of block-based
+            programming, he developed his foundation in elementary school. Later
+            on, Ethan continued his journey in middle school, where he became
+            familiar with Python, HTML, and CSS, though he was only scratching
+            the surface. The point where Ethan really fell in love with the
+            secret languages of programming was in high school, where he learned
+            Java and reinforced his Python skills. Here, his abilities took
+            their first big step, and Ethan was able to wield his skills in a
+            more sophisticated manner.
+          </p>
+
+          <p>
+            After graduating from high school, Ethan took his talents to the
+            University of Texas, reknowned for its impressive pedigree in
+            computer science. Here, he polished his programming skills in Java,
+            Python, and C. The turning point for Ethan at this stage was that he
+            realized there was still more hidden magic beneath the surface.
+            Courses such as Data Structures and Computer Architecture revealed
+            that the power of programming derived from various complicated
+            instruments within the computers he'd been using. He was shocked to
+            learn that so much eloquence had been right under his nose the whole
+            time.
+          </p>
+
+          <p>
+            As he obtained more knowledge and experience, Ethan was fortunate enough to
+            receive an offer to work as a software engineering intern at a startup company. 
+            Now as an intern, this opportunity allows him to apply his skills in a real-world setting 
+            for the first time. Not without its challenges, the experience has been an excellent
+            source of more knowledge, where he has been able to unlock even more 
+            languages such as React and Typscript. 
+          </p>
+        </div>
       </div>
-      <div class="img-container">
-        <img src="./images/html.png" alt="HTML5 logo">
-        <div class="caption">Skill Acquired: 2015</div>
-      </div>
-      <div class="img-container">
-        <img src="./images/css.png" alt="CSS3 logo">
-        <div class="caption">Skill Acquired: 2015</div>
-      </div>
-      <div class="img-container">
-        <img src="./images/python-logo.png" alt="Python logo">
-        <div class="caption">Skill Acquired: 2019</div>
-      </div>
-      <div class="img-container">
-        <img src="./images/java.png" alt="Java logo">
-        <div class="caption">Skill Acquired: 2019</div>
-      </div>
-      <div class="img-container">
-        <img src="./images/c.png" alt="C logo">
-        <div class="caption">Skill Acquired: 2024</div>
-      </div>
-      <div class="line"></div>
     </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="history">
-      <p>Ethan Mason took an interest in the art some call "programming" at an early age. 
-        Beginning with the simple magics of block-based programming, he developed his foundation in elementary school.
-        Later on, Ethan continued his journey in middle school, where he became familiar with Python, HTML, and CSS, though 
-        he was only scratching the surface.
-        The point where Ethan really fell in love with the secret languages of programming was in high school,
-        where he learned Java and reinforced his Python skills. Here, his abilities took their first big step, and Ethan
-        was able to wield his skills in a more sophisticated manner.</p>
-      <br>
-      <p>After graduating from high school, Ethan took his talents to the University of Texas, reknowned for its
-        impressive pedigree in computer science. Here, he polished his programming skills in Java, Python, and C.
-        The turning point for Ethan at this stage was that he realized there was still more hidden magic
-        beneath the surface. Courses such as Data Structures and Computer Architecture revealed that the power of
-        programming derived from various complicated instruments within the computers he'd been using. He was shocked
-        to learn that so much eloquence had been right under his nose the whole time.</p>
-    </div>
-    <footer>
-      <div class="footer-content">
-        <p>“How old do you have to be before you know what's going on?”</p>
-        <p>- Calvin, from <em>Calvin and Hobbes</em></p>
-        <br>
-        <p class="copyright">© 2024 Copyright Ethan Mason. All rights reserved.</p>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>"How old do you have to be before you know what's going on?"</p>
+          <p>- Calvin, from <em>Calvin and Hobbes</em></p>
+          <p class="copyright">
+            © 2025 Copyright Ethan Mason. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   </body>
-  
 </html>

@@ -1,85 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Character | Ethan Mason's Portfolio</title>
-    <link href="main.css" rel="stylesheet">
-    <link href="character.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="main.css" rel="stylesheet" />
+    <link href="character.css" rel="stylesheet" />
   </head>
   <body>
-    <nav>
-      <a href="./index.html">Rest</a>  <!-- Homepage -->
-      <a href="./backstory.html">Backstory</a> <!-- Timeline of skills acquired -->
-      <a href="./character.html">Character</a> <!-- Skills/About Me -->
-      <a href="./completedquests.html">Completed Quests</a> <!-- Projects -->   
-      <a href="./raven.html">Send a Raven</a> <!-- Contact -->
-    </nav>
-    <br>
-    <br>
-    <h1>Character</h1>
-    <br>
-    <img src="./images/picture.jpg" alt="Ethan Mason" width="250" height="325">
-    <br>
-    <a href="./images/Ethan Mason - Resume.pdf" target="_blank">Résumé</a>
-    <br>
-    <p>Comuter Science major at UT Austin, class of 2025</p>
-    <br>
-    <div class="experience-container">
-      <div class="xp">
-        <h2>Education:</h2>
-        <br>
-        <h3>University of Texas at Austin</h3>
-        <h4>Completed Courses:</h4>
-        <ul>
-          <li>Intro to Programming (Java)</li>
-          <li>Data Structures (Python/Java)</li>
-          <li>Discrete Mathematics</li>
-          <li>Computer Architecture (C)</li>
-        </ul>
-        <h4>Currently Taking:</h4>
-        <ul>
-          <li>Operating Systems</li>
-          <li>Artificial Intelligence</li>
-        </ul>
-        <br>
-        <h3>Vista Ridge High School</h3>
-        <ul>
-          <li>May 2022</li>
-          <li>5.4 GPA</li>
-          <li>Rank 21/641</li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="custom-nav">
+      <div class="nav-container">
+        <a class="nav-link-custom" href="./index.html">Rest</a>
+        <a class="nav-link-custom" href="./backstory.html">Backstory</a>
+        <a class="nav-link-custom" href="./character.html">Character</a>
+        <a class="nav-link-custom" href="./completed-quests.html"
+          >Completed Quests</a
+        >
+        <a class="nav-link-custom" href="./raven.html">Send a Raven</a>
       </div>
-      <div class="xp">
-        <h2>Work Experience:</h2>
-        <br>
-        <h3>Coding with Kids - Cedar Park, TX</h3>
-        <h4>Coding Instructor | June 2023 - Present</h4>
-        <ul>
-          <li>Use knowledge of Python and Java to teach programming to students 5-18
-            years old</li>
-          <li>Design a comprehensive coding curriculum to conduct high-quality classes, and maintain
-            positive relationships with customers</li>
-        </ul>
-        <h3>Moviehouse & Eatery - Austin, TX</h3>
-        <h4>Server | December 2022, December 2023</h4>
-        <ul>
-          <li>Proactively greet all guests in the theater, guide guests
-            through the menu and suggest promotions, add-ons, or upselling, demonstrating
-            knowledge of menu</li>
-          <li>Ensure all food orders are inputted rapidly and accurately in point of sale system and
-            process all payments correctly and responsibility</li>
-        </ul>
-        <h3>Goodwill Central Texas - Cedar Park, TX</h3>
-        <h4>Cashier | July 2021 - October 2021</h4>
-        <ul>
-          <li>Maintain facilities, insure guests receive positive interactions, organize merchandise</li>
-        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container main-content">
+      <div class="content-card">
+        <h1>Character</h1>
+
+        <!-- Profile Section -->
+        <div class="profile-section">
+          <img
+            src="./images/picture.jpg"
+            alt="Ethan Mason"
+            class="profile-image"
+          />
+          <div class="profile-info">
+            <a
+              href="./images/Ethan Mason - Resume.pdf"
+              target="_blank"
+              class="resume-link"
+            >
+              Résumé
+            </a>
+            <p class="profile-description">
+              Computer Science major at UT Austin, class of 2025
+            </p>
+          </div>
+        </div>
+
+        <!-- Experience Container -->
+        <div class="experience-container">
+          <div class="xp">
+            <h2>Education:</h2>
+
+            <div class="education-section">
+              <h3>University of Texas at Austin</h3>
+              <h4>Completed Courses:</h4>
+              <ul>
+                <li>Intro to Programming (Java)</li>
+                <li>Data Structures (Python/Java)</li>
+                <li>Discrete Mathematics</li>
+                <li>Computer Architecture (C)</li>
+                <li>Software Engineering</li>
+                <li>Operating Systems</li>
+                <li>Artificial Intelligence</li>
+                <li>Information Retrieval</li>
+                <li>Algorithms</li>
+                <li>Intro to Machine Learning</li>
+              </ul>
+              <h4>Currently Taking:</h4>
+              <ul>
+                <li>Natural Language Processing</li>
+                <li>Data Management</li>
+                <li>Neural Networks</li>
+              </ul>
+            </div>
+
+            <div class="education-section">
+              <h3>Vista Ridge High School</h3>
+              <ul>
+                <li>May 2022</li>
+                <li>5.4 GPA</li>
+                <li>Rank 21/641</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="xp">
+            <h2>Work Experience:</h2>
+
+            <div class="work-section">
+              <h3>Money Pickle - Remote</h3>
+              <h4>Software Engineering Intern | April 2025 - Present</h4>
+              <ul>
+                <li>
+                  Contributing to a fast-growing platform using Node.js, React,
+                  and SQL
+                </li>
+                <li>
+                  Working on API design, analytics tracking, and third-party
+                  integrations (e.g., Stripe, PostHog, Sentry)
+                </li>
+                <li>
+                  Collaborating with the development team on real-world projects
+                  impacting thousands of users
+                </li>
+              </ul>
+            </div>
+
+            <div class="work-section">
+              <h3>Coding with Kids - Cedar Park, TX</h3>
+              <h4>Coding Instructor | June 2023 - January 2025</h4>
+              <ul>
+                <li>
+                  Use knowledge of Python and Java to teach programming to
+                  students 5-18 years old
+                </li>
+                <li>
+                  Design a comprehensive coding curriculum to conduct
+                  high-quality classes, and maintain positive relationships with
+                  customers
+                </li>
+              </ul>
+            </div>
+
+            <div class="work-section">
+              <h3>Moviehouse & Eatery - Austin, TX</h3>
+              <h4>Server | December 2022, December 2023</h4>
+              <ul>
+                <li>
+                  Proactively greet all guests in the theater, guide guests
+                  through the menu and suggest promotions, add-ons, or
+                  upselling, demonstrating knowledge of menu
+                </li>
+                <li>
+                  Ensure all food orders are inputted rapidly and accurately in
+                  point of sale system and process all payments correctly and
+                  responsibility
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <footer>
-      <p>“I’ll teach you to carry off men’s sweethearts!”</p>
-      <p>- Mitka, from <em>The Terrible Czar</em> by Aleksey Tolstoy</p>
-      <br>
-      <p class="copyright">© 2024 Copyright Ethan Mason. All rights reserved.</p>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>"I'll teach you to carry off men's sweethearts!"</p>
+          <p>- Mitka, from <em>The Terrible Czar</em> by Aleksey Tolstoy</p>
+          <p class="copyright">
+            © 2025 Copyright Ethan Mason. All rights reserved.
+          </p>
+        </div>
+      </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
