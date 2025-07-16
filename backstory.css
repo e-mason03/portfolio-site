@@ -63,7 +63,7 @@
 
 /* Precise line positioning for second timeline */
 .timeline:nth-of-type(2) .line {
-  width: calc(120px + 0.5rem); /* Width of one image + gap between them */
+  width: 120px; /* Width of the gap between the two images */
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -137,8 +137,11 @@
   }
 
   .timeline:nth-of-type(2) .line {
-    width: 1px;
+    width: 2px;
     height: calc(100px + 1.5rem); /* Vertical line height for mobile */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .history p {
@@ -168,6 +171,10 @@
   }
 
   .timeline:nth-of-type(2) .line {
+    width: 2px;
     height: calc(80px + 1.5rem); /* Adjust for smaller images on mobile */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
