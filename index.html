@@ -1,33 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rest | Ethan Mason's Portfolio</title>
-    <link href="main.css" rel="stylesheet">
-    <link href="rest-page.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <nav>
-      <a href="./index.html">Rest</a>  <!-- Homepage -->
-      <a href="./backstory.html">Backstory</a> <!-- Timeline of skills acquired -->
-      <a href="./character.html">Character</a> <!-- Skills/About Me -->
-      <a href="./completedquests.html">Completed Quests</a> <!-- Projects -->   
-      <a href="./raven.html">Send a Raven</a> <!-- Contact -->
+    <!-- Navigation -->
+    <nav class="custom-nav">
+      <div class="nav-container">
+        <a class="nav-link-custom" href="./index.html">Rest</a>
+        <a class="nav-link-custom" href="./backstory.html">Backstory</a>
+        <a class="nav-link-custom" href="./character.html">Character</a>
+        <a class="nav-link-custom" href="./completedquests.html"
+          >Completed Quests</a
+        >
+        <a class="nav-link-custom" href="./raven.html">Send a Raven</a>
+      </div>
     </nav>
-    <br>
-    <br>
-    <h1>Welcome!</h1>
-    <img src="./images/campfire.gif" alt="Ethan Mason's campfire">
-    <br>
-    <h3>Feel free to rest here as long as you like. If you're looking for information about Ethan Mason, head to the top of this page.</h3>
-    <footer>
-      <div class="footer-content">
-        <p>“Fate spins along as it should.”</p>
-        <p>- Withers, from <em>Baldur's Gate 3</em></p>
-        <p class="credit">Thanks to Tumblr user <a href="http://headlikeanorange.tumblr.com/" target="_blank">Head Like an Orange</a> for the campfire GIF.</p>
-        <p class="copyright">© 2024 Copyright Ethan Mason. All rights reserved.</p>
+
+    <!-- Main Content -->
+    <div class="container main-content">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-md-10 col-sm-12">
+          <div class="content-card">
+            <h1>Welcome!</h1>
+            <div class="text-center">
+              <img
+                src="./images/campfire.gif"
+                alt="Ethan Mason's campfire"
+                class="img-fluid"
+              />
+            </div>
+            <h3>
+              Feel free to rest here as long as you like. If you're looking for
+              information about Ethan Mason, head to the top of this page.
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>"Fate spins along as it should."</p>
+          <p>- Withers, from <em>Baldur's Gate 3</em></p>
+          <p class="credit">
+            Thanks to Tumblr user
+            <a href="http://headlikeanorange.tumblr.com/" target="_blank"
+              >Head Like an Orange</a
+            >
+            for the campfire GIF.
+          </p>
+          <p class="copyright">
+            © 2024 Copyright Ethan Mason. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
-  </body>
-  
-</html>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

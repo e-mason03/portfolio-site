@@ -1,83 +1,164 @@
 * {
-  background-color: #8B4513;
-  margin: 0;
-  padding: 0;
-}
+        margin: 0;
+        padding: 0;
+      }
 
-body {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 100%;
-}
+      body {
+        background-color: #b6947b;
+        color: #8b4513;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
 
-nav {
-  text-align: center;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
+      /* Navigation Styles */
+      .custom-nav {
+        background-color: #8b4513;
+        padding: 20px 0;
+        border-bottom: 3px solid #fff;
+        width: 100%;
+      }
 
-nav a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin: 0 15px;
-  color: #FFF;
-  border: 3px solid #FFF;
-  text-decoration: none;
-  transition: background-color 0.3s;
-  width: 175px;
-  height: 50px;
-  font-size: 24px !important;
-  font-weight: bold;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
+      .nav-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        flex-wrap: wrap;
+      }
 
-nav a:hover {
-  background-color: #9F5927;
-}
+      .nav-link-custom {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 15px;
+        color: #fff !important;
+        border: 3px solid #fff;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        font-size: 18px;
+        font-weight: bold;
+        white-space: nowrap;
+        border-radius: 8px;
+        background-color: transparent;
+        flex: 1;
+        min-width: 140px;
+        max-width: 200px;
+      }
 
+      .nav-link-custom:hover {
+        background-color: #9f5927;
+        color: #fff !important;
+      }
 
-h1 {
-  color: #FFF;
-  text-align: center;
-}
+      /* Content Card Styles */
+      .content-card {
+        background-color: #8b4513;
+        border: 3px solid #fff;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        padding: 2rem;
+        margin: 2rem 0;
+        text-align: center;
+      }
 
-img {
-  border: 5px solid #FFF;
-}
+      .content-card h1 {
+        color: #fff;
+        margin-bottom: 1.5rem;
+        font-size: 2.5rem;
+      }
 
-footer {
-  width: 100%;
-  border-top: 2px solid #FFF;
-  text-align: center;
-  padding: 1em 0;
-  margin-top: 4em;
-}
+      .content-card h3 {
+        color: #fff;
+        margin-top: 1.5rem;
+        font-weight: 400;
+        line-height: 1.6;
+      }
 
-.footer-content {
-  color: #FFF;
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-}
+      .content-card img {
+        border: 5px solid #fff;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
 
-footer .credit{
-  margin-top: 1em;
-}
+      /* Main content area */
+      .main-content {
+        flex: 1;
+        padding: 2rem 0;
+      }
 
-footer .copyright,
-footer .credit {
-  color: #FFF;
-  font-size: 10px;
-}
+      /* Footer Styles */
+      .custom-footer {
+        background-color: #8b4513;
+        border-top: 2px solid #fff;
+        padding: 2rem 0;
+        margin-top: auto;
+      }
 
-footer .credit a {
-  color: #FFF;
-}
+      .footer-content {
+        color: #fff;
+        text-align: center;
+      }
+
+      .footer-content p {
+        margin-bottom: 0.5rem;
+      }
+
+      .footer-content .credit {
+        margin-top: 1rem;
+        font-size: 0.8rem;
+      }
+
+      .footer-content .copyright {
+        font-size: 0.8rem;
+      }
+
+      .footer-content a {
+        color: #fff;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .nav-link-custom {
+          font-size: 16px;
+          padding: 8px 12px;
+          min-width: 120px;
+          max-width: 160px;
+        }
+
+        .content-card {
+          margin: 1rem 0;
+          padding: 1.5rem;
+        }
+
+        .content-card h1 {
+          font-size: 2rem;
+        }
+
+        .content-card h3 {
+          font-size: 1.1rem;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .nav-container {
+          gap: 8px;
+        }
+
+        .nav-link-custom {
+          font-size: 14px;
+          padding: 6px 8px;
+          min-width: 100px;
+          max-width: 120px;
+        }
+
+        .content-card {
+          padding: 1rem;
+        }
+
+        .content-card h1 {
+          font-size: 1.8rem;
+        }
+      }
