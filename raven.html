@@ -1,40 +1,89 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Send a Raven | Ethan Mason's Portfolio</title>
-        <link href="main.css" rel="stylesheet">
-        <link href="raven.css" rel="stylesheet">
-    </head>
-    <body>
-        <nav>
-            <a href="./index.html">Rest</a>  <!-- Homepage -->
-            <a href="./backstory.html">Backstory</a> <!-- Timeline of skills acquired -->
-            <a href="./character.html">Character</a> <!-- Skills/About Me -->
-            <a href="./completed-quests.html">Completed Quests</a> <!-- Projects -->   
-            <a href="./raven.html">Send a Raven</a> <!-- Contact -->
-          </nav>
-        <br>
-        <br>
-        <h1>Send a Raven</h1>
-        <br>
-        <img src="./images/raven.jpg" alt="Raven" width="250" height="300">
-        <br>
-        <div class="buttons">
-            <a href="mailto:ethanimason616@gmail.com">Email</a>
-            <a href="https://www.linkedin.com/in/ethan-mason-ba01981b1/" target="_blank">LinkedIn</a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send a Raven | Ethan Mason's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./raven.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="custom-nav">
+      <div class="nav-container">
+        <a class="nav-link-custom" href="./index.html">Rest</a>
+        <a class="nav-link-custom" href="./backstory.html">Backstory</a>
+        <a class="nav-link-custom" href="./character.html">Character</a>
+        <a class="nav-link-custom" href="./completed-quests.html"
+          >Completed Quests</a
+        >
+        <a class="nav-link-custom" href="./raven.html">Send a Raven</a>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container main-content">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-md-10 col-sm-12">
+          <div class="content-card">
+            <h1>Send a Raven</h1>
+            <div class="text-center">
+              <img
+                src="./images/raven.jpg"
+                alt="Raven"
+                class="img-fluid"
+                style="max-width: 250px; height: 300px"
+              />
+            </div>
+            <div class="buttons">
+              <a href="mailto:ethanimason616@gmail.com">Email</a>
+              <a
+                href="https://www.linkedin.com/in/ethan-mason-ba01981b1/"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
         </div>
-        
-        <footer>
-            <div class="footer-content">
-                <p>“What the Englishman said about survival was this: ‘If you stop taking pride in your appearance, you will very soon die.’ 
-                  He said that he had seen several men die in the following way: ‘They ceased to stand up straight, then ceased to shave or wash, 
-                  then ceased to get out of bed, then ceased to talk, then died. There is much to be said for it: it is evidently a very easy and 
-                  painless way to go.’”</p>
-                <p>- <em>Slaughterhouse-Five</em> by Kurt Vonnegut</p>
-                <p class="credit">Thanks to Pixabay user <a href="https://pixabay.com/users/applespc-19095802/" target="_blank">ApplesPC</a>
-                    for the image of a raven.</p>
-                <p class="copyright">© 2024 Copyright Ethan Mason. All rights reserved.</p>
-              </div>
-        </footer>
-    </body>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>
+            "What the Englishman said about survival was this: 'If you stop
+            taking pride in your appearance, you will very soon die.' He said
+            that he had seen several men die in the following way: 'They ceased
+            to stand up straight, then ceased to shave or wash, then ceased to
+            get out of bed, then ceased to talk, then died. There is much to be
+            said for it: it is evidently a very easy and painless way to go.'"
+          </p>
+          <p>- <em>Slaughterhouse-Five</em> by Kurt Vonnegut</p>
+          <p class="credit">
+            Thanks to Pixabay user
+            <a
+              href="https://pixabay.com/users/applespc-19095802/"
+              target="_blank"
+              >ApplesPC</a
+            >
+            for the image of a raven.
+          </p>
+          <p class="copyright">
+            © 2025 Copyright Ethan Mason. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
