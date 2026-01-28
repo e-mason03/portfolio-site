@@ -1,0 +1,41 @@
+/* Center all elements except valentine-buttons horizontally */
+body { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f7bbd9;
+}
+
+h1 {
+    font-size: 3rem;
+    font-style: italic;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #ff69b4;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+img {
+    border: 3px solid #ff69b4;
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+}
+
+.valentine-buttons {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    align-self: auto; /* Override centering for buttons */
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+}
