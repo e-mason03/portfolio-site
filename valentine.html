@@ -18,60 +18,66 @@
             <button class="valentine-buttons" id="no-btn">No</button>    
         </div>
         <script>
-            /* =========================================================
-                1️⃣  Grab the elements we need to touch
-                2️⃣  Attach click listeners
-                3️⃣  Handle the “Yes” click – swap image
-                4️⃣  Handle the “No” click – flash “Wrong Answer”
-            ========================================================= */
-
-            // 1️⃣ Grab references to DOM nodes
             const imgEl   = document.getElementById('valentine-img');
             const yesBtn  = document.getElementById('yes-btn');
             const noBtn   = document.getElementById('no-btn');
-            
+
+            /* ------------------------------------------------------------------
+            1️⃣  Handle the “Yes” click – fade out, swap to GIF, fade in
+            ------------------------------------------------------------------*/
             function onYesClicked() {
-                // 1️⃣ Fade the current image out
-                imgEl.classList.add('fade-out');
+            yesBtn.textContent = 'Yay!!';
 
-                // 2️⃣ When the CSS transition ends…
-                imgEl.addEventListener('transitionend', function handleFadeEnd() {
-                    // Remove the event listener so it runs only once
-                    imgEl.removeEventListener('transitionend', handleFadeEnd);
+            // fade the current image out
+            imgEl.classList.add('fade-out');
 
-                    // 2a️⃣ Change the image source
-                    imgEl.src = './images/mort.gif';
+            // when the fade‑out transition ends, reload the GIF & fade back in
+            imgEl.addEventListener('transitionend', function handleFadeEnd(e) {
+                // only care about the opacity transition, not other properties
+                if (e.propertyName !== 'opacity') return;
 
-                    // 3️⃣ Fade it back in (by simply removing the class)
-                    imgEl.classList.remove('fade-out');
-                });
+                // remove listener (so it runs only once)
+                imgEl.removeEventListener('transitionend', handleFadeEnd);
+
+                // reload GIF with a unique query string to bust cache
+                playGif();
+
+                // fade it back in
+                imgEl.classList.remove('fade-out');
+            }, { once: true });   // { once: true } removes the need for manual remove
             }
 
-            // 2️⃣ Click listeners
+            /* ------------------------------------------------------------------
+            2️⃣  Handle the “No” click – flash “Wrong Answer”
+            ------------------------------------------------------------------*/
+            function onNoClicked() {
+            const originalText = noBtn.textContent;          // "No"
+            const wrongText    = '... Wrong Answer!';        // temporary text
+
+            // change text
+            noBtn.textContent = wrongText;
+            noBtn.classList.add('wrong-answer'); // if you have styles
+
+            // restore after 1.5 s
+            setTimeout(() => {
+                noBtn.textContent = originalText;
+                noBtn.classList.remove('wrong-answer');
+            }, 1500);
+            }
+
+            /* ------------------------------------------------------------------
+            3️⃣  Helper to load the GIF again with a fresh timestamp
+            ------------------------------------------------------------------*/
+            function playGif() {
+            const timestamp = Date.now(); // unique value to bust cache
+            imgEl.src = `./images/mort.gif?t=${timestamp}`;
+            }
+
+            /* ------------------------------------------------------------------
+            4️⃣  Attach click listeners
+            ------------------------------------------------------------------*/
             yesBtn.addEventListener('click', onYesClicked);
             noBtn.addEventListener('click', onNoClicked);
-
-            // 3️⃣ Yes‑button handler
-            function onYesClicked() {
-                imgEl.classList.add('fade-out'); setTimeout(() => { imgEl.src = './images/mort.gif'; 
-                imgEl.classList.remove('fade-out'); }, 300);
-                imgEl.src = './images/mort.gif';
-            }
-
-            // 4️⃣ No‑button handler
-            function onNoClicked() {
-                const originalText = noBtn.textContent;      // "No"
-                const wrongText   = 'Wrong Answer';          // the temporary text
-
-                // Change the text to *Wrong Answer*
-                noBtn.textContent = wrongText;
-
-                // After 1.5 s, restore the original text and styles
-                setTimeout(() => {
-                    noBtn.textContent = originalText;
-                    noBtn.classList.remove('wrong-answer');
-                }, 1500);
-            }
-            </script>
+        </script>
     </body>
 </html>
