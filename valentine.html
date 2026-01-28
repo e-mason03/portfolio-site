@@ -26,26 +26,19 @@
             1️⃣  Handle the “Yes” click – fade out, swap to GIF, fade in
             ------------------------------------------------------------------*/
             function onYesClicked() {
-            yesBtn.textContent = 'Yay!!';
+                imgEl.classList.add('fade-out');
 
-            // fade the current image out
-            imgEl.classList.add('fade-out');
-
-            // when the fade‑out transition ends, reload the GIF & fade back in
-            imgEl.addEventListener('transitionend', function handleFadeEnd(e) {
-                // only care about the opacity transition, not other properties
-                if (e.propertyName !== 'opacity') return;
-
-                // remove listener (so it runs only once)
-                imgEl.removeEventListener('transitionend', handleFadeEnd);
-
-                // reload GIF with a unique query string to bust cache
-                playGif();
-
-                // fade it back in
-                imgEl.classList.remove('fade-out');
-            }, { once: true });   // { once: true } removes the need for manual remove
+                imgEl.addEventListener('transitionend', function onFadeOutEnd(e){
+                        if (e.propertyName !== 'opacity') return;
+                        imgEl.addEventListener('load', onGifLoaded, { once:true });
+                        playGif();               // change src while still invisible
+                }, { once:true });
             }
+
+            function onGifLoaded(){
+                imgEl.classList.remove('fade-out');  // now the GIF fades in
+            }
+
 
             /* ------------------------------------------------------------------
             2️⃣  Handle the “No” click – flash “Wrong Answer”
