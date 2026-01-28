@@ -26,6 +26,8 @@
             1️⃣  Handle the “Yes” click – fade out, swap to GIF, fade in
             ------------------------------------------------------------------*/
             function onYesClicked() {
+                yesBtn.textContent = 'Yay!! ❤️';
+
                 imgEl.classList.add('fade-out');
 
                 imgEl.addEventListener('transitionend', function onFadeOutEnd(e){
